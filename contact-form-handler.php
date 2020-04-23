@@ -9,8 +9,8 @@
 		$to = "mail@mail.com";	
 		$from = $femail;
 		
-		$mail_body = '<b>Nombre:</b> '.$fname.' <br><b>Email:</b> '.$femail.' <p>'.$fmessage.'</p>';
-		$headers = "MG Estudio Contable - De: $from\n";
+		$mail_body = '<b>Name:</b> '.$fname.' <br><b>Email:</b> '.$femail.' <p>'.$fmessage.'</p>';
+		$headers = "MGEC - From: $from\n";
 		//$headers .= "MIME-Version: 1.0\n";
 		//$headers .= "Content-type: text/html; charset=iso-8859-1\n";
 		if( mail($to, $fsubject, $mail_body, $headers) ){
